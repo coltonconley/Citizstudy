@@ -1,25 +1,191 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YKH-fH-Cdl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flash Card Screen-->
+        <scene sceneID="uBM-9o-gXr">
+            <objects>
+                <viewController id="VL7-WZ-d1l" customClass="FlashCardScreen" customModule="Citizstudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3BM-Mn-bvU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pZp-tK-Jo5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H63-0C-Pj2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQQ-xb-vSd">
+                                <rect key="frame" x="504" y="38" width="50" height="30"/>
+                                <state key="normal" title="Shuffle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
+                                <rect key="frame" x="63" y="482" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-ou-DAj">
+                                <rect key="frame" x="268" y="482" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="zqO-Td-BMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-71-Tgl">
+                                <rect key="frame" x="69" y="38" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="RjN-dt-Aty"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol9-lu-NAI">
+                                <rect key="frame" x="174" y="482" width="30" height="30"/>
+                                <state key="normal" title="Flip"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
+                        <outlet property="FlipButtonFlashCardScreen" destination="ol9-lu-NAI" id="ez5-AP-lFd"/>
+                        <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
+                        <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
+                        <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdC-K3-hFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598.93333333333328" y="868.33000000000004"/>
+        </scene>
+        <!--Practice Screen-->
+        <scene sceneID="9TJ-Xo-smC">
+            <objects>
+                <viewController id="TXz-TH-OCl" customClass="PracticeScreen" customModule="Citizstudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYI-uk-xK5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tc8-kC-1YE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R5r-1A-c4v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-pb-nAN">
+                                <rect key="frame" x="75" y="63" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="PeD-e4-Lu3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVk-1t-DUF">
+                                <rect key="frame" x="20" y="269" width="236" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButtonPracticeScreen" destination="Wjq-pb-nAN" id="OxX-h6-vp5"/>
+                        <outlet property="TextFieldPracticeScreen" destination="VVk-1t-DUF" id="hXq-Vl-nOI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3K-qQ-T0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="1510"/>
+        </scene>
+        <!--Menu Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuScreen" customModule="Citizstudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1da-8s-wJv">
+                                <rect key="frame" x="252" y="108" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO9-qY-3yy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Flashcards"/>
+                                <connections>
+                                    <segue destination="VL7-WZ-d1l" kind="modal" id="bfm-Ze-4Nc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mI-X5-Os3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Practice"/>
+                                <connections>
+                                    <segue destination="TXz-TH-OCl" kind="modal" id="4Lg-dW-Jv0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2mI-X5-Os3" firstAttribute="top" secondItem="gO9-qY-3yy" secondAttribute="bottom" constant="200" id="Dx4-kq-mbX"/>
+                            <constraint firstItem="1da-8s-wJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MM9-Lu-2ja"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2mI-X5-Os3" secondAttribute="bottom" constant="100" id="cET-CD-moU"/>
+                            <constraint firstItem="gO9-qY-3yy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cRp-eC-cag"/>
+                            <constraint firstItem="2mI-X5-Os3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dtL-JD-hHk"/>
+                            <constraint firstItem="1da-8s-wJv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="sIE-Vo-5oZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flashCardMenuButton" destination="gO9-qY-3yy" id="lQB-tG-WZq"/>
+                        <outlet property="menuLabel" destination="1da-8s-wJv" id="0gn-wC-kjy"/>
+                        <outlet property="practiceMenuButton" destination="2mI-X5-Os3" id="wmO-cq-i5K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="202.13333333333333" y="1186.1733333333334"/>
+        </scene>
+        <!--Init Screen-->
+        <scene sceneID="Q8T-Fc-rHT">
+            <objects>
+                <viewController id="YKH-fH-Cdl" customClass="initScreen" customModule="Citizstudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QTd-pr-R37"/>
+                        <viewControllerLayoutGuide type="bottom" id="tvJ-Ol-jqB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="20a-Tf-9Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-Br-s3z">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="J0L-Qv-uzF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rya-Br-s3z" secondAttribute="trailing" id="AvF-lL-xQS"/>
+                            <constraint firstItem="Rya-Br-s3z" firstAttribute="centerY" secondItem="20a-Tf-9Eb" secondAttribute="centerY" id="cgc-SB-ljZ"/>
+                            <constraint firstItem="Rya-Br-s3z" firstAttribute="centerX" secondItem="20a-Tf-9Eb" secondAttribute="centerX" id="hM5-94-KvX"/>
+                            <constraint firstItem="Rya-Br-s3z" firstAttribute="leading" secondItem="20a-Tf-9Eb" secondAttribute="leadingMargin" id="qpb-Nw-8ur"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logo" destination="Rya-Br-s3z" id="SkM-fy-Pio"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="initScreen" id="ACC-FB-tQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1x-mG-quz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.59999999999999" y="435.23000000000002"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PeD-e4-Lu3"/>
+    </inferredMetricsTieBreakers>
 </document>

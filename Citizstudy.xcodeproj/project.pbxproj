@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1616088B1CC2EF5A002822B2 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616088A1CC2EF5A002822B2 /* MenuScreen.swift */; };
+		1616088D1CC2F4B4002822B2 /* FlashCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616088C1CC2F4B4002822B2 /* FlashCardScreen.swift */; };
+		1616088F1CC2F4F7002822B2 /* PracticeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */; };
 		1643692A1CC2D8C2009E69F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369291CC2D8C2009E69F2 /* AppDelegate.swift */; };
 		1643692C1CC2D8C2009E69F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643692B1CC2D8C2009E69F2 /* ViewController.swift */; };
 		1643692F1CC2D8C2009E69F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1643692D1CC2D8C2009E69F2 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		164369341CC2D8C2009E69F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164369321CC2D8C2009E69F2 /* LaunchScreen.storyboard */; };
 		1643693F1CC2D8C2009E69F2 /* CitizstudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643693E1CC2D8C2009E69F2 /* CitizstudyTests.swift */; };
 		1643694A1CC2D8C2009E69F2 /* CitizstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */; };
+		1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369591CC2DC48009E69F2 /* initScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1616088A1CC2EF5A002822B2 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		1616088C1CC2F4B4002822B2 /* FlashCardScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardScreen.swift; sourceTree = "<group>"; };
+		1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScreen.swift; sourceTree = "<group>"; };
 		164369261CC2D8C2009E69F2 /* Citizstudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citizstudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164369291CC2D8C2009E69F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1643692B1CC2D8C2009E69F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		164369451CC2D8C2009E69F2 /* CitizstudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitizstudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizstudyUITests.swift; sourceTree = "<group>"; };
 		1643694B1CC2D8C2009E69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		164369591CC2DC48009E69F2 /* initScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				164369291CC2D8C2009E69F2 /* AppDelegate.swift */,
 				1643692B1CC2D8C2009E69F2 /* ViewController.swift */,
+				1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */,
+				1616088C1CC2F4B4002822B2 /* FlashCardScreen.swift */,
+				1616088A1CC2EF5A002822B2 /* MenuScreen.swift */,
+				164369591CC2DC48009E69F2 /* initScreen.swift */,
 				1643692D1CC2D8C2009E69F2 /* Main.storyboard */,
 				164369301CC2D8C2009E69F2 /* Assets.xcassets */,
 				164369321CC2D8C2009E69F2 /* LaunchScreen.storyboard */,
@@ -256,7 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1616088B1CC2EF5A002822B2 /* MenuScreen.swift in Sources */,
+				1616088D1CC2F4B4002822B2 /* FlashCardScreen.swift in Sources */,
+				1616088F1CC2F4F7002822B2 /* PracticeScreen.swift in Sources */,
 				1643692C1CC2D8C2009E69F2 /* ViewController.swift in Sources */,
+				1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */,
 				1643692A1CC2D8C2009E69F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +498,7 @@
 				164369501CC2D8C2009E69F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		164369511CC2D8C2009E69F2 /* Build configuration list for PBXNativeTarget "CitizstudyTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				164369531CC2D8C2009E69F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		164369541CC2D8C2009E69F2 /* Build configuration list for PBXNativeTarget "CitizstudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				164369561CC2D8C2009E69F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
