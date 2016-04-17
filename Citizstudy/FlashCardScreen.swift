@@ -124,14 +124,20 @@ class FlashCardScreen: UIViewController {
         FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
 
     }
-    func CardTapped(sender: AnyObject) {
+
+    @IBAction func NextButtonTapped(sender: AnyObject) {
+        index += 1
+        FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
     }
-    func ShuffleTapped(sender: AnyObject) {
+    
+    @IBAction func PreviousButtonTapped(sender: UIButton) {
+        index -= 1
+        FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
+        
     }
-    func PreviousTapped(sender: AnyObject) {
-        print("hello")
-    }
-    }
+
+    
+}
 
 
 

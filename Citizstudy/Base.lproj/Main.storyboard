@@ -29,7 +29,7 @@
                                 <rect key="frame" x="247" y="508" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="NextTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="zqO-Td-BMz"/>
+                                    <action selector="NextButtonTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="9Nd-7K-yfl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-71-Tgl">
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="41" y="508" width="59" height="30"/>
                                 <state key="normal" title="Previous"/>
                                 <connections>
-                                    <action selector="PreviousTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="d37-If-D5e"/>
+                                    <action selector="PreviousButtonTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="svO-OM-Dif"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,8 +80,6 @@
                     <connections>
                         <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
                         <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="YVe-kf-WO9"/>
-                        <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
-                        <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
                         <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
                     </connections>
                 </viewController>
