@@ -14,6 +14,10 @@ class PracticeScreen: UIViewController {
     
     @IBOutlet weak var TextFieldPracticeScreen: UITextField!
     
+    @IBOutlet weak var QuestionLabel: UILabel!
+    @IBAction func NextQuestionButtonTapped(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

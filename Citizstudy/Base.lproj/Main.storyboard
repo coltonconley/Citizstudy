@@ -51,7 +51,7 @@
                                 <color key="backgroundColor" red="0.86411242311432501" green="0.97876761885843311" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="CardTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="7Mh-8d-4n7"/>
+                                    <action selector="CardTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="er9-JJ-FYg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
@@ -82,7 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
-                        <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="YVe-kf-WO9"/>
+                        <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="85c-BG-Juk"/>
                         <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
                     </connections>
                 </viewController>
@@ -114,6 +114,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBP-48-tlf">
+                                <rect key="frame" x="139" y="149" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynp-vs-nAG">
+                                <rect key="frame" x="202" y="60" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="NextQuestionButtonTapped:" destination="TXz-TH-OCl" eventType="touchUpInside" id="zCX-UG-QFM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -127,6 +140,7 @@
                     </view>
                     <connections>
                         <outlet property="BackButtonPracticeScreen" destination="Wjq-pb-nAN" id="OxX-h6-vp5"/>
+                        <outlet property="QuestionLabel" destination="MBP-48-tlf" id="BVF-8w-QIw"/>
                         <outlet property="TextFieldPracticeScreen" destination="VVk-1t-DUF" id="hXq-Vl-nOI"/>
                     </connections>
                 </viewController>
@@ -230,6 +244,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ACC-FB-tQZ"/>
+        <segue reference="RjN-dt-Aty"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -118,7 +118,7 @@ class FlashCardScreen: UIViewController {
     
         
     //    let dictionary = SwiftJs
-        
+    
  
     @IBAction func FlipButtonTapped(sender: UIButton) {
         FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
@@ -144,6 +144,9 @@ class FlashCardScreen: UIViewController {
         }
         FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
         
+    }
+    @IBAction func CardTapped(sender: UIButton) {
+        FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
     }
 
     
