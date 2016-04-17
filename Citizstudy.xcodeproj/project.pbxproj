@@ -18,6 +18,7 @@
 		1643693F1CC2D8C2009E69F2 /* CitizstudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643693E1CC2D8C2009E69F2 /* CitizstudyTests.swift */; };
 		1643694A1CC2D8C2009E69F2 /* CitizstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */; };
 		1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369591CC2DC48009E69F2 /* initScreen.swift */; };
+		1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizstudyUITests.swift; sourceTree = "<group>"; };
 		1643694B1CC2D8C2009E69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164369591CC2DC48009E69F2 /* initScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initScreen.swift; sourceTree = "<group>"; };
+		1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivicsQuestionClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1643692B1CC2D8C2009E69F2 /* ViewController.swift */,
 				1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */,
 				1616088C1CC2F4B4002822B2 /* FlashCardScreen.swift */,
+				1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */,
 				1616088A1CC2EF5A002822B2 /* MenuScreen.swift */,
 				164369591CC2DC48009E69F2 /* initScreen.swift */,
 				1643692D1CC2D8C2009E69F2 /* Main.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */,
 				1616088B1CC2EF5A002822B2 /* MenuScreen.swift in Sources */,
 				1616088D1CC2F4B4002822B2 /* FlashCardScreen.swift in Sources */,
 				1616088F1CC2F4F7002822B2 /* PracticeScreen.swift in Sources */,
