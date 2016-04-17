@@ -18,9 +18,28 @@ class MenuScreen: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var practiceMenuButton: UIButton!
     
+    @IBOutlet weak var logo: UIImageView!
+    
+    //        var player : AVAudioPlayer! = nil
+    //        //let path = NSBundle.mainBundle().pathForResource(myDict!["Hello"] as! String?, ofType:"mp3")
+    //        let path = "Scheinman_CultComp2014.mp3"
+    //        let fileURL = NSURL(fileURLWithPath: path)
+    //
+    //        do {
+    //            player = try AVAudioPlayer(contentsOfURL: fileURL)
+    //
+    //        }
+    //        catch{
+    //            player = nil
+    //        }
+    //        player.prepareToPlay()
+    //        player.play()
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         var myDict: NSDictionary?
         if let path = NSBundle.mainBundle().pathForResource("AudioInfo", ofType: "plist") {
             myDict = NSDictionary(contentsOfFile: path)
@@ -34,9 +53,13 @@ class MenuScreen: UIViewController, AVAudioPlayerDelegate {
         audioPlayer = try! AVAudioPlayer(contentsOfURL: soundURL)
         audioPlayer.delegate = self
         audioPlayer.play()
-
+*/
         // Do any additional setup after loading the view.
+        
+        self.logo.image = UIImage(named: "logo")
+
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

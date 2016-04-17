@@ -30,7 +30,7 @@ class CivicsQuestion {
     {
         var answer: String = ""
         for i in answers {
-            answer += i
+            answer += i + "\n"
         }
         return answer
     }
