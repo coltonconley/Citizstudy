@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class initScreen: UIViewController {
+class initScreen: UIViewController, AVAudioPlayerDelegate {
 
     
     @IBOutlet weak var logo: UIImageView!
@@ -20,6 +21,24 @@ class initScreen: UIViewController {
         performSelector(Selector("showNavController"), withObject: nil, afterDelay: 3)
         
         self.logo.image = UIImage(named: "logo")
+       
+        
+        
+        
+//        var player : AVAudioPlayer! = nil
+//        //let path = NSBundle.mainBundle().pathForResource(myDict!["Hello"] as! String?, ofType:"mp3")
+//        let path = "Scheinman_CultComp2014.mp3"
+//        let fileURL = NSURL(fileURLWithPath: path)
+//        
+//        do {
+//            player = try AVAudioPlayer(contentsOfURL: fileURL)
+//
+//        }
+//        catch{
+//            player = nil
+//        }
+//        player.prepareToPlay()
+//        player.play()
     }
 
     func showNavController()

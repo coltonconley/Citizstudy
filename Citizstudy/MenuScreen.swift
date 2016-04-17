@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
-class MenuScreen: UIViewController {
+
+class MenuScreen: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var menuLabel: UILabel!
     
@@ -18,6 +20,20 @@ class MenuScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var myDict: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("AudioInfo", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
+        }
+        
+        print(myDict!["Hello"])
+        
+        var audioPlayer = AVAudioPlayer()
+        
+        let soundURL: NSURL = NSBundle.mainBundle().URLForResource(myDict!["Hello"] as! String?, withExtension: "mp3")!
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: soundURL)
+        audioPlayer.delegate = self
+        audioPlayer.play()
 
         // Do any additional setup after loading the view.
     }

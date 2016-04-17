@@ -19,6 +19,8 @@
 		1643694A1CC2D8C2009E69F2 /* CitizstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */; };
 		1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369591CC2DC48009E69F2 /* initScreen.swift */; };
 		1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */; };
+		1CE6C12E1CC324DB00637211 /* AudioInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C12D1CC324DB00637211 /* AudioInfo.plist */; };
+		1CE6C1301CC3286C00637211 /* Scheinman_CultComp2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		1643694B1CC2D8C2009E69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164369591CC2DC48009E69F2 /* initScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initScreen.swift; sourceTree = "<group>"; };
 		1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivicsQuestionClass.swift; sourceTree = "<group>"; };
+		1CE6C12D1CC324DB00637211 /* AudioInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudioInfo.plist; path = ../AudioInfo.plist; sourceTree = "<group>"; };
+		1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Scheinman_CultComp2014.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		164369281CC2D8C2009E69F2 /* Citizstudy */ = {
 			isa = PBXGroup;
 			children = (
+				1CE6C12D1CC324DB00637211 /* AudioInfo.plist */,
 				164369291CC2D8C2009E69F2 /* AppDelegate.swift */,
 				1643692B1CC2D8C2009E69F2 /* ViewController.swift */,
 				1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */,
@@ -114,6 +119,7 @@
 				1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */,
 				1616088A1CC2EF5A002822B2 /* MenuScreen.swift */,
 				164369591CC2DC48009E69F2 /* initScreen.swift */,
+				1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */,
 				1643692D1CC2D8C2009E69F2 /* Main.storyboard */,
 				164369301CC2D8C2009E69F2 /* Assets.xcassets */,
 				164369321CC2D8C2009E69F2 /* LaunchScreen.storyboard */,
@@ -246,7 +252,9 @@
 			files = (
 				164369341CC2D8C2009E69F2 /* LaunchScreen.storyboard in Resources */,
 				164369311CC2D8C2009E69F2 /* Assets.xcassets in Resources */,
+				1CE6C1301CC3286C00637211 /* Scheinman_CultComp2014.mp3 in Resources */,
 				1643692F1CC2D8C2009E69F2 /* Main.storyboard in Resources */,
+				1CE6C12E1CC324DB00637211 /* AudioInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
