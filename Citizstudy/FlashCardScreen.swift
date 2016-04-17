@@ -20,6 +20,7 @@ class FlashCardScreen: UIViewController {
     
     @IBOutlet weak var NextbuttonFlashCardScreen: UIButton!
     
+    @IBOutlet weak var FlashCardButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

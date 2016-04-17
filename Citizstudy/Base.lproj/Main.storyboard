@@ -18,37 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQQ-xb-vSd">
-                                <rect key="frame" x="504" y="38" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQQ-xb-vSd">
+                                <rect key="frame" x="229" y="50" width="50" height="30"/>
                                 <state key="normal" title="Shuffle"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
-                                <rect key="frame" x="63" y="482" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
+                                <rect key="frame" x="41" y="508" width="59" height="30"/>
                                 <state key="normal" title="Previous"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-ou-DAj">
-                                <rect key="frame" x="268" y="482" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-ou-DAj">
+                                <rect key="frame" x="247" y="508" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="NextTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="zqO-Td-BMz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-71-Tgl">
-                                <rect key="frame" x="69" y="38" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-71-Tgl">
+                                <rect key="frame" x="41" y="50" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="RjN-dt-Aty"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol9-lu-NAI">
-                                <rect key="frame" x="174" y="482" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol9-lu-NAI">
+                                <rect key="frame" x="145" y="508" width="30" height="30"/>
                                 <state key="normal" title="Flip"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-AN-zN0">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5L-71-Tgl" firstAttribute="leading" secondItem="H63-0C-Pj2" secondAttribute="leadingMargin" constant="25" id="3Sk-ua-fk3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fQQ-xb-vSd" secondAttribute="trailing" constant="25" id="5d0-fk-kTb"/>
+                            <constraint firstItem="pZp-tK-Jo5" firstAttribute="top" secondItem="jXa-ou-DAj" secondAttribute="bottom" constant="30" id="Bhg-cV-rev"/>
+                            <constraint firstItem="fQQ-xb-vSd" firstAttribute="top" secondItem="3BM-Mn-bvU" secondAttribute="bottom" constant="30" id="FNW-hj-r8i"/>
+                            <constraint firstItem="pZp-tK-Jo5" firstAttribute="top" secondItem="ol9-lu-NAI" secondAttribute="bottom" constant="30" id="JTJ-xv-1nA"/>
+                            <constraint firstItem="lCM-ZF-amv" firstAttribute="leading" secondItem="H63-0C-Pj2" secondAttribute="leadingMargin" constant="25" id="L5A-3R-qf5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jXa-ou-DAj" secondAttribute="trailing" constant="25" id="P9r-xG-8WV"/>
+                            <constraint firstItem="d5L-71-Tgl" firstAttribute="top" secondItem="3BM-Mn-bvU" secondAttribute="bottom" constant="30" id="V7a-Ps-m9N"/>
+                            <constraint firstItem="K1i-AN-zN0" firstAttribute="centerY" secondItem="H63-0C-Pj2" secondAttribute="centerY" id="VY2-lD-bho"/>
+                            <constraint firstItem="K1i-AN-zN0" firstAttribute="centerX" secondItem="H63-0C-Pj2" secondAttribute="centerX" id="Y6i-iH-mIv"/>
+                            <constraint firstItem="pZp-tK-Jo5" firstAttribute="top" secondItem="lCM-ZF-amv" secondAttribute="bottom" constant="30" id="hJL-PT-OmR"/>
+                            <constraint firstItem="ol9-lu-NAI" firstAttribute="centerX" secondItem="H63-0C-Pj2" secondAttribute="centerX" id="nWm-1U-rWk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
+                        <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="YVe-kf-WO9"/>
                         <outlet property="FlipButtonFlashCardScreen" destination="ol9-lu-NAI" id="ez5-AP-lFd"/>
                         <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
                         <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
@@ -57,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdC-K3-hFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598.93333333333328" y="868.33000000000004"/>
+            <point key="canvasLocation" x="605" y="727"/>
         </scene>
         <!--Practice Screen-->
         <scene sceneID="9TJ-Xo-smC">
@@ -71,20 +90,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-pb-nAN">
-                                <rect key="frame" x="75" y="63" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-pb-nAN">
+                                <rect key="frame" x="41" y="60" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="PeD-e4-Lu3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVk-1t-DUF">
-                                <rect key="frame" x="20" y="269" width="236" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVk-1t-DUF">
+                                <rect key="frame" x="38" y="238" width="244" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wjq-pb-nAN" firstAttribute="leading" secondItem="R5r-1A-c4v" secondAttribute="leadingMargin" constant="25" id="1cR-9i-flU"/>
+                            <constraint firstItem="VVk-1t-DUF" firstAttribute="leading" secondItem="R5r-1A-c4v" secondAttribute="leadingMargin" constant="22" id="9gg-JI-k5U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VVk-1t-DUF" secondAttribute="trailing" constant="22" id="BeG-Rb-1L5"/>
+                            <constraint firstItem="Wjq-pb-nAN" firstAttribute="top" secondItem="nYI-uk-xK5" secondAttribute="bottom" constant="40" id="gVz-rO-of6"/>
+                            <constraint firstItem="VVk-1t-DUF" firstAttribute="centerX" secondItem="R5r-1A-c4v" secondAttribute="centerX" id="jbD-Fu-XWR"/>
+                            <constraint firstItem="Tc8-kC-1YE" firstAttribute="top" secondItem="VVk-1t-DUF" secondAttribute="bottom" constant="300" id="m7y-aP-ChS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="BackButtonPracticeScreen" destination="Wjq-pb-nAN" id="OxX-h6-vp5"/>
@@ -186,6 +213,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PeD-e4-Lu3"/>
+        <segue reference="RjN-dt-Aty"/>
     </inferredMetricsTieBreakers>
 </document>
