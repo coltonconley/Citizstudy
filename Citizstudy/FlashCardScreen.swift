@@ -126,12 +126,22 @@ class FlashCardScreen: UIViewController {
     }
 
     @IBAction func NextButtonTapped(sender: AnyObject) {
-        index += 1
+        if index < myArray.count - 1
+        {
+           index += 1
+        }else{
+            index = 0
+        }
         FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
     }
     
     @IBAction func PreviousButtonTapped(sender: UIButton) {
-        index -= 1
+        if index > 0
+        {
+            index -= 1
+        }else{
+            index = myArray.count - 1
+        }
         FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
         
     }
