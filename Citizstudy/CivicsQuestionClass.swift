@@ -14,11 +14,13 @@ class CivicsQuestion {
     
     var question: String
     var answers: [String]
+    var front: Bool
     
     init(newQuestion: String, newAnswers: [String])
     {
         question = newQuestion
         answers = newAnswers
+        front = true
     }
     
     func getQuestion () -> String
@@ -34,5 +36,27 @@ class CivicsQuestion {
         }
         return answer
     }
+    
+    func getFirstCorrectAnswer() -> String
+    {
+
+        return answers[0]
+    }
+    
+    
+    func getAnswersArray () -> [String]
+    {
+        return answers
+    }
+    
+    func getSide () -> Bool{
+        return front
+    }
+    
+    func changeSide()
+    {
+        front = !front
+    }
+    
 }
 

@@ -14,10 +14,17 @@ class FlashCardScreen: UIViewController {
     
     @IBOutlet weak var BackButtonFlashCardScreen: UIButton!
 
-    
     @IBOutlet weak var FlashCardButton: UIButton!
+    
+    @IBOutlet weak var CardButton: UIButton!
+    @IBOutlet weak var ShuffleButton: UIButton!
+    @IBOutlet weak var FlipButton: UIButton!
+    @IBOutlet weak var NextButton: UIButton!
+    
+    @IBOutlet weak var PreviousButton: UIButton!
     var myArray: [CivicsQuestion] = []
     var index = 0;
+
     override func viewDidLoad() {
         super.viewDidLoad()
         myArray = makeCivicsQuestions()
@@ -33,6 +40,14 @@ class FlashCardScreen: UIViewController {
         } catch {
             print("error serializing JSON: \(error)")
  */
+        BackButtonFlashCardScreen.layer.cornerRadius = 10
+        ShuffleButton.layer.cornerRadius = 10
+        PreviousButton.layer.cornerRadius = 10
+        FlipButton.layer.cornerRadius = 10
+        NextButton.layer.cornerRadius = 10
+        CardButton.layer.cornerRadius = 10
+
+
     }
 
     func makeCivicsQuestions() -> [CivicsQuestion] {
@@ -100,6 +115,45 @@ class FlashCardScreen: UIViewController {
         questionsArray.append(CivicsQuestion(newQuestion: "Why did the colonists fight the British?", newAnswers: ["high taxes","British army stayed in their houses", "they didn't have self-government"]))
         questionsArray.append(CivicsQuestion(newQuestion: "Who wrote the Declaration of Independence?", newAnswers: ["Thomas Jefferson"]))
         
+        questionsArray.append(CivicsQuestion(newQuestion: "When was the Declaration of Independence adopted?", newAnswers: ["July 4, 1776"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "There were 13 original states. Name three.", newAnswers: ["New Hampshire","Massachusetts","Rhode Island","Connecticut","New York","New Jersey","Pennsylvania","Delaware","Maryland","Virginia","North Carolina","South Carolina","Georgia"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What happened at the Constitutional Convention?", newAnswers: ["The Constitution was written","The Founding Fathers wrote the Constitution"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "When was the Constitution written?", newAnswers: ["1787"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.", newAnswers: ["James Madison","Alexander Hamilton","John Jay", "Publius"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What is one thing Benjamin Franklin is famous for?", newAnswers: ["U.S. Diplomat","Oldest member of constitutional convention","first Postmaster General of the United States","writer of Poor Richard's Almanac", "Started the first free libraries"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Who is the Father of Our Country?", newAnswers: ["George Washington","Washington"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Who was the first President?", newAnswers: ["George Washington", "Washington"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What territory did the United States buy from France in 1803?", newAnswers: ["the Louisiana Territory", "Louisiana"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one war fought by the United States in the 1800s.", newAnswers: ["War of 1812","Mexican-American War","Civil War", "Spanish-American War"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name the U.S. war between the North and the South.", newAnswers: ["The Civil War", "War between the States"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one problem that led to the Civil War.", newAnswers: ["Slavery","Economic reasons", "States' rights"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What was one important thing that Abraham Lincoln did?", newAnswers: ["Emancipation Proclamation","saved the Union", "led the United States during Civil War"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What did the Emancipation Proclamation do?", newAnswers: ["Freed slaves in the Confederate states","freed slaves in the Confederacy","freed the slaves", "freed slaves in most Southern states"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What did Susan B. Anthony do?", newAnswers: ["fought for women’s rights", "fought for civil rights"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one war fought by the United States in the 1900s.", newAnswers: ["World War I","World War II","Korean War","Vietnam War", "Persian War"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Who was President during World War I?", newAnswers: ["Woodrow Wilson", "Wilson"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Who was President during the Great Depression and World War II?", newAnswers: ["Franklin Roosevelt","Roosevelt"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Who did the United States fight in World War II?", newAnswers: ["Japan", "Germany and Italy"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Before he was President, Eisenhower was a general. What war was he in?", newAnswers: ["World War II"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "During the Cold War, what was the main concern of the United States?", newAnswers: ["Communism"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What movement tried to end racial discrimination?", newAnswers: ["Civil rights movement","Civil rights"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What did Martin Luther King Jr. do?", newAnswers: ["Fought for civil rights", "Worked for equality for all Americans"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What major event happened on September 11", newAnswers: [" 2001"," in the United States?","Terrorists attacked the United States"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one American Indian tribe in the United States.", newAnswers: ["Cherokee","Navajo","Sioux","Chippewa","Choctaw","Pueblo","Apache","Iroquois","Seminole","Creek","Blackfeet","Cheyenne","Arawak","Shawnee","Mohegan","Huron","Oneida","Lakota","Crow","Teton","Hopi","Inuit"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one of the two longest rivers in the United States.", newAnswers: ["Missouri River","Mississippi River"]))
+            questionsArray.append(CivicsQuestion(newQuestion: "What ocean is on the West Coast of the United States?", newAnswers: ["Pacific Ocean","Pacific"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What ocean is on the East Coast of the United States?", newAnswers: ["Atlantic Ocean","Atlantic"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one U.S. territory.", newAnswers: ["Puerto Rico","US Virgin Islands","American Samoa","Northern Mariana Islands","Guam"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one state that borders Canada.", newAnswers: ["Maine","New Hampshire","Vermont","New York","Pennsylvania","Ohio","Michigan","Minnesota","North Dakota","Montana","Idaho","Washington","Alaska"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name one state that borders Mexico.", newAnswers: ["California","Arizona","New Mexico","Texas"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What is the capital of the United States?", newAnswers: ["Washington DC","DC"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Where is the Statue of Liberty?", newAnswers: ["New York City","Liberty Island","New Jersey","near New York City","on the Hudson","on the Hudson River"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Why does the  flag have 13 stripes?", newAnswers: ["because there were 13 original colonies","because the stripes represent the original colonies"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Why does the  flag have 50 stars?", newAnswers: ["because there is one star for each state ","because there is one star for each state","because there are 50 states"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "What is the name of the national anthem? ", newAnswers: ["The Star-Spangled Banner"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "When do we celebrate Independence Day?", newAnswers: ["July 4"]))
+        questionsArray.append(CivicsQuestion(newQuestion: "Name two national U.S. holidays.", newAnswers: ["New Year's Day","Martin Luther King Day","Presidents' Day","Memorial Day","Independence Day","Labor Day","Columbus Day","Veterans Day","Thanksgiving","Christmas"]))
+        
         return questionsArray
     }
     
@@ -113,8 +167,18 @@ class FlashCardScreen: UIViewController {
     //    let dictionary = SwiftJs
     
  
+    
     @IBAction func FlipButtonTapped(sender: UIButton) {
-        FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
+        if (myArray[index].getSide())
+        {
+            FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
+            myArray[index].changeSide()
+        }
+        else
+        {
+            FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
+            myArray[index].changeSide()
+        }
 
     }
 
@@ -139,7 +203,16 @@ class FlashCardScreen: UIViewController {
         
     }
     @IBAction func CardTapped(sender: UIButton) {
-        FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
+        if (myArray[index].getSide())
+        {
+            FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
+            myArray[index].changeSide()
+        }
+        else
+        {
+            FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
+            myArray[index].changeSide()
+        }
     }
     @IBAction func ShuffleTapped(sender: UIButton) {
             shuffle()

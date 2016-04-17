@@ -12,8 +12,6 @@ import AVFoundation
 
 class MenuScreen: UIViewController, AVAudioPlayerDelegate {
 
-    @IBOutlet weak var menuLabel: UILabel!
-    
     @IBOutlet weak var flashCardMenuButton: UIButton!
     
     @IBOutlet weak var practiceMenuButton: UIButton!
@@ -57,7 +55,9 @@ class MenuScreen: UIViewController, AVAudioPlayerDelegate {
         // Do any additional setup after loading the view.
         
         self.logo.image = UIImage(named: "logo")
-
+        
+        flashCardMenuButton.layer.cornerRadius = 10
+        practiceMenuButton.layer.cornerRadius = 10
     }
 
 
@@ -77,4 +77,7 @@ class MenuScreen: UIViewController, AVAudioPlayerDelegate {
     }
     */
 
+    @IBAction func PracticePressed(sender: AnyObject) {
+        performSegueWithIdentifier("MenuScreen", sender: sender)
+    }
 }
