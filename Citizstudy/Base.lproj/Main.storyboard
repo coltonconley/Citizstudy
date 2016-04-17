@@ -57,7 +57,7 @@
                                 <rect key="frame" x="41" y="508" width="59" height="30"/>
                                 <state key="normal" title="Previous"/>
                                 <connections>
-                                    <action selector="PreviousTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="SJ3-Ld-OOy"/>
+                                    <action selector="PreviousTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="d37-If-D5e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,13 +83,12 @@
                         <outlet property="FlipButtonFlashCardScreen" destination="ol9-lu-NAI" id="ez5-AP-lFd"/>
                         <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
                         <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
-                        <outlet property="PreviousTapped" destination="lCM-ZF-amv" id="6Pg-4k-DfQ"/>
                         <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdC-K3-hFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="727"/>
+            <point key="canvasLocation" x="712" y="665"/>
         </scene>
         <!--Practice Screen-->
         <scene sceneID="9TJ-Xo-smC">
@@ -157,7 +156,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Flashcards"/>
                                 <connections>
-                                    <segue destination="VL7-WZ-d1l" kind="modal" id="bfm-Ze-4Nc"/>
+                                    <segue destination="VL7-WZ-d1l" kind="modal" identifier="MenuScreen" id="bfm-Ze-4Nc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mI-X5-Os3">
@@ -186,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202.13333333333333" y="1186.1733333333334"/>
+            <point key="canvasLocation" x="180" y="1284"/>
         </scene>
         <!--Init Screen-->
         <scene sceneID="Q8T-Fc-rHT">

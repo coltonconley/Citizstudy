@@ -47,6 +47,7 @@ class FlashCardScreen: UIViewController {
     @IBAction func ShuffleTapped(sender: AnyObject) {
     }
     @IBAction func PreviousTapped(sender: AnyObject) {
+        print("hello")
     }
 
     /*
