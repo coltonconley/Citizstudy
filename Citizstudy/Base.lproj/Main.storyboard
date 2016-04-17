@@ -43,7 +43,7 @@
                                 <rect key="frame" x="145" y="508" width="30" height="30"/>
                                 <state key="normal" title="Flip"/>
                                 <connections>
-                                    <action selector="FlipButtonTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="SGt-5G-cZr"/>
+                                    <action selector="FlipButtonTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="akc-ZG-Gaj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-AN-zN0">
@@ -80,7 +80,6 @@
                     <connections>
                         <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
                         <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="YVe-kf-WO9"/>
-                        <outlet property="FlipButtonFlashCardScreen" destination="ol9-lu-NAI" id="ez5-AP-lFd"/>
                         <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
                         <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
                         <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>

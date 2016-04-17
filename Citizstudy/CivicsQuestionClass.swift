@@ -14,13 +14,11 @@ class CivicsQuestion {
     
     var question: String
     var answers: [String]
-    var numAnswers: Int
     
-    init(newQuestion: String, newAnswers: [String], newNumAnswers: Int)
+    init(newQuestion: String, newAnswers: [String])
     {
         question = newQuestion
         answers = newAnswers
-        numAnswers = newNumAnswers
     }
     
     func getQuestion () -> String
@@ -28,13 +26,13 @@ class CivicsQuestion {
         return question
     }
     
-    func getAnswers () -> [String]
+    func getAnswers () -> String
     {
-        return answers
-    }
-    
-    func getNumAnswers () -> Int
-    {
-        return numAnswers
+        var answer: String = ""
+        for i in answers {
+            answer += i
+        }
+        return answer
     }
 }
+
