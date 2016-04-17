@@ -21,10 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQQ-xb-vSd">
                                 <rect key="frame" x="229" y="50" width="50" height="30"/>
                                 <state key="normal" title="Shuffle"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
-                                <rect key="frame" x="41" y="508" width="59" height="30"/>
-                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="ShuffleTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="V9c-rV-h0b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-ou-DAj">
                                 <rect key="frame" x="247" y="508" width="32" height="30"/>
@@ -43,10 +42,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol9-lu-NAI">
                                 <rect key="frame" x="145" y="508" width="30" height="30"/>
                                 <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="FlipButtonTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="SGt-5G-cZr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-AN-zN0">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="CardTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="7Mh-8d-4n7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ZF-amv">
+                                <rect key="frame" x="41" y="508" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="PreviousTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="SJ3-Ld-OOy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,6 +83,7 @@
                         <outlet property="FlipButtonFlashCardScreen" destination="ol9-lu-NAI" id="ez5-AP-lFd"/>
                         <outlet property="NextbuttonFlashCardScreen" destination="jXa-ou-DAj" id="T8h-yL-PSo"/>
                         <outlet property="PreviousButtonFlashCardScreen" destination="lCM-ZF-amv" id="4iM-2j-hKV"/>
+                        <outlet property="PreviousTapped" destination="lCM-ZF-amv" id="6Pg-4k-DfQ"/>
                         <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
                     </connections>
                 </viewController>

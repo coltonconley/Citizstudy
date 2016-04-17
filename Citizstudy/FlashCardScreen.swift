@@ -23,6 +23,8 @@ class FlashCardScreen: UIViewController {
     @IBOutlet weak var FlashCardButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    var index = 0
 
         // Do any additional setup after loading the view.
     }
@@ -36,6 +38,15 @@ class FlashCardScreen: UIViewController {
         
         
         
+    }
+
+    @IBAction func FlipButtonTapped(sender: AnyObject) {
+    }
+    @IBAction func CardTapped(sender: AnyObject) {
+    }
+    @IBAction func ShuffleTapped(sender: AnyObject) {
+    }
+    @IBAction func PreviousTapped(sender: AnyObject) {
     }
 
     /*
