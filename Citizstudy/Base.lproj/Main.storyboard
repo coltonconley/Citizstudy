@@ -22,7 +22,7 @@
                                 <rect key="frame" x="229" y="50" width="50" height="30"/>
                                 <state key="normal" title="Shuffle"/>
                                 <connections>
-                                    <action selector="ShuffleTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="V9c-rV-h0b"/>
+                                    <action selector="ShuffleTapped:" destination="VL7-WZ-d1l" eventType="touchUpInside" id="P7k-yd-Ejv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-ou-DAj">
@@ -83,7 +83,6 @@
                     <connections>
                         <outlet property="BackButtonFlashCardScreen" destination="d5L-71-Tgl" id="clU-Ho-euw"/>
                         <outlet property="FlashCardButton" destination="K1i-AN-zN0" id="85c-BG-Juk"/>
-                        <outlet property="ShuffleButtonFlashCardScreen" destination="fQQ-xb-vSd" id="Pdi-ue-fKJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdC-K3-hFD" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,13 +14,6 @@ class FlashCardScreen: UIViewController {
     
     @IBOutlet weak var BackButtonFlashCardScreen: UIButton!
 
-    @IBOutlet weak var ShuffleButtonFlashCardScreen: UIButton!
-    
-    @IBOutlet weak var PreviousButtonFlashCardScreen: UIButton!
-    
-    @IBOutlet weak var FlipButtonFlashCardScreen: UIButton!
-    
-    @IBOutlet weak var NextbuttonFlashCardScreen: UIButton!
     
     @IBOutlet weak var FlashCardButton: UIButton!
     var myArray: [CivicsQuestion] = []
@@ -148,7 +141,23 @@ class FlashCardScreen: UIViewController {
     @IBAction func CardTapped(sender: UIButton) {
         FlashCardButton.setTitle(myArray[index].getAnswers(), forState: .Normal)
     }
-
+    @IBAction func ShuffleTapped(sender: UIButton) {
+            shuffle()
+        FlashCardButton.setTitle(myArray[index].getQuestion(), forState: .Normal)
+    }
+    
+    func shuffle () // Places cards in random order.
+    {
+        var newArray: [CivicsQuestion] = []
+        
+        while(myArray.count > 0)
+        {
+            var size: UInt32 = UInt32(myArray.count)
+            var num: Int = Int(arc4random_uniform(size))
+            newArray.append(myArray.removeAtIndex(num))
+        }
+        myArray = newArray
+    }
     
 }
 
