@@ -205,6 +205,14 @@
                                     <constraint firstAttribute="width" constant="75" id="fPr-Kz-skj"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atI-eg-1bQ">
+                                <rect key="frame" x="91" y="60" width="60" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.62352941179999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Shuffle"/>
+                                <connections>
+                                    <action selector="ShuffleTapped:" destination="TXz-TH-OCl" eventType="touchUpInside" id="wsF-bC-aCT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -232,6 +240,7 @@
                         <outlet property="CorrectWrongDisplay" destination="m8S-va-lqi" id="bHT-qy-kjp"/>
                         <outlet property="NextQuestion" destination="Ynp-vs-nAG" id="Lri-DS-FFG"/>
                         <outlet property="QuestionDisplay" destination="KBD-T5-ivr" id="gqS-hf-k1S"/>
+                        <outlet property="ShuffleButton" destination="atI-eg-1bQ" id="XHg-0d-aSC"/>
                         <outlet property="SubmitButton" destination="6RL-SC-d6T" id="igw-Hg-PYp"/>
                         <outlet property="TextField" destination="VVk-1t-DUF" id="8Y0-lc-vdo"/>
                     </connections>

@@ -23,6 +23,8 @@ class PracticeScreen: UIViewController {
     
     @IBOutlet weak var SubmitButton: UIButton!
     
+    @IBOutlet weak var ShuffleButton: UIButton!
+    
     @IBAction func NextQuestionTapped(sender: AnyObject) {
         if index < myArray.count - 1
         {
@@ -48,7 +50,7 @@ class PracticeScreen: UIViewController {
         NextQuestion.layer.cornerRadius = 10
         QuestionDisplay.setTitle(myArray[index].getQuestion(), forState: .Normal)
         SubmitButton.layer.cornerRadius = 10
-        
+        ShuffleButton.layer.cornerRadius = 10
         TextField.becomeFirstResponder()
         
     }
@@ -188,6 +190,24 @@ class PracticeScreen: UIViewController {
 
         
 
+    }
+
+    @IBAction func ShuffleTapped(sender: UIButton) {
+        shuffle()
+        QuestionDisplay.setTitle(myArray[index].getQuestion(), forState: .Normal)
+    }
+    
+    func shuffle () // Places cards in random order.
+    {
+        var newArray: [CivicsQuestion] = []
+        
+        while(myArray.count > 0)
+        {
+            var size: UInt32 = UInt32(myArray.count)
+            var num: Int = Int(arc4random_uniform(size))
+            newArray.append(myArray.removeAtIndex(num))
+        }
+        myArray = newArray
     }
 
     /*
