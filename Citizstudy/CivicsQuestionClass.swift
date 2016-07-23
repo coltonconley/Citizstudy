@@ -14,6 +14,10 @@ class CivicsQuestion {
     
     var question: String
     var answers: [String]
+    var spanishQuestion: String
+    var spanishAnswers: [String]
+    
+    
     var front: Bool
     
     init(newQuestion: String, newAnswers: [String])
@@ -21,6 +25,9 @@ class CivicsQuestion {
         question = newQuestion
         answers = newAnswers
         front = true
+        spanishAnswers = [""]
+        spanishQuestion = ""
+        
     }
     
     func getQuestion () -> String
@@ -37,6 +44,21 @@ class CivicsQuestion {
         return answer
     }
     
+    func getSpanishQuestion () -> String
+    {
+        return spanishQuestion
+    }
+    
+    func getSpanishAnswers () -> String
+    {
+        var answer: String = ""
+        for i in spanishAnswers {
+            answer += i + "\n"
+        }
+        return answer
+    }
+    
+    
     func getFirstCorrectAnswer() -> String
     {
 
@@ -44,9 +66,21 @@ class CivicsQuestion {
     }
     
     
+    //maybe pass a bool to get first correct answer to specify language
+    func getFirstCorrectSpanishAnswer() -> String
+    {
+        return spanishAnswers[0]
+    }
+    
+    
     func getAnswersArray () -> [String]
     {
         return answers
+    }
+    
+    func getSpanishAnswersArray () -> [String]
+    {
+        return spanishAnswers
     }
     
     func getSide () -> Bool{
