@@ -19,8 +19,6 @@
 		1643694A1CC2D8C2009E69F2 /* CitizstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */; };
 		1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369591CC2DC48009E69F2 /* initScreen.swift */; };
 		1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */; };
-		1CE6C12E1CC324DB00637211 /* AudioInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C12D1CC324DB00637211 /* AudioInfo.plist */; };
-		1CE6C1301CC3286C00637211 /* Scheinman_CultComp2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */; };
 		1CE6C1321CC32E9100637211 /* civics_test_questions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C1311CC32E9000637211 /* civics_test_questions.csv */; };
 		1CE6C1341CC339B900637211 /* DataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1331CC339B900637211 /* DataImporter.swift */; };
 		1CE6C1361CC33ED000637211 /* Questions in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C1351CC33ED000637211 /* Questions */; };
@@ -63,8 +61,6 @@
 		1643694B1CC2D8C2009E69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164369591CC2DC48009E69F2 /* initScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initScreen.swift; sourceTree = "<group>"; };
 		1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivicsQuestionClass.swift; sourceTree = "<group>"; };
-		1CE6C12D1CC324DB00637211 /* AudioInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudioInfo.plist; path = ../AudioInfo.plist; sourceTree = "<group>"; };
-		1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Scheinman_CultComp2014.mp3; sourceTree = "<group>"; };
 		1CE6C1311CC32E9000637211 /* civics_test_questions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = civics_test_questions.csv; sourceTree = "<group>"; };
 		1CE6C1331CC339B900637211 /* DataImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImporter.swift; sourceTree = "<group>"; };
 		1CE6C1351CC33ED000637211 /* Questions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions; sourceTree = "<group>"; };
@@ -124,7 +120,6 @@
 		164369281CC2D8C2009E69F2 /* Citizstudy */ = {
 			isa = PBXGroup;
 			children = (
-				1CE6C12D1CC324DB00637211 /* AudioInfo.plist */,
 				164369291CC2D8C2009E69F2 /* AppDelegate.swift */,
 				1643692B1CC2D8C2009E69F2 /* ViewController.swift */,
 				1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */,
@@ -132,7 +127,6 @@
 				1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */,
 				1616088A1CC2EF5A002822B2 /* MenuScreen.swift */,
 				164369591CC2DC48009E69F2 /* initScreen.swift */,
-				1CE6C12F1CC3286C00637211 /* Scheinman_CultComp2014.mp3 */,
 				1643692D1CC2D8C2009E69F2 /* Main.storyboard */,
 				164369301CC2D8C2009E69F2 /* Assets.xcassets */,
 				164369321CC2D8C2009E69F2 /* LaunchScreen.storyboard */,
@@ -250,6 +244,7 @@
 				TargetAttributes = {
 					164369251CC2D8C2009E69F2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = SF45635P6J;
 					};
 					164369391CC2D8C2009E69F2 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -289,10 +284,8 @@
 				164369341CC2D8C2009E69F2 /* LaunchScreen.storyboard in Resources */,
 				1CE6C1361CC33ED000637211 /* Questions in Resources */,
 				164369311CC2D8C2009E69F2 /* Assets.xcassets in Resources */,
-				1CE6C1301CC3286C00637211 /* Scheinman_CultComp2014.mp3 in Resources */,
 				1CE6C1321CC32E9100637211 /* civics_test_questions.csv in Resources */,
 				1643692F1CC2D8C2009E69F2 /* Main.storyboard in Resources */,
-				1CE6C12E1CC324DB00637211 /* AudioInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,9 +506,11 @@
 			baseConfigurationReference = 2A95BF9ABC0FEAADFA7BF40E /* Pods-Citizstudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Citizstudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JLC.Citizstudy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.citizstudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -525,9 +520,12 @@
 			baseConfigurationReference = 2E99BF15B9F3F22FC433E4AE /* Pods-Citizstudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = Citizstudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JLC.Citizstudy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.citizstudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
