@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CitizstudyTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CitizstudyUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>57332385BA0BB552B639662E60C06C78</key>
+		<key>000BC8F29786D218BFE776239555064A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA5C61CD58C6A8F3EE530E3CD4DD6F03</key>
+		<key>5E91F02990D3B08E8E4FB1D194849810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>746FC30FDD87318A57F0ADC7BE21BEDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6C4E207ACF98A5DD2BFA945179638D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,6 @@
+framework module Pods_CitizstudyUITests {
+  umbrella header "Pods-CitizstudyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -19,10 +19,7 @@
 		1643694A1CC2D8C2009E69F2 /* CitizstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369491CC2D8C2009E69F2 /* CitizstudyUITests.swift */; };
 		1643695A1CC2DC48009E69F2 /* initScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164369591CC2DC48009E69F2 /* initScreen.swift */; };
 		1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */; };
-		1CE6C1321CC32E9100637211 /* civics_test_questions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C1311CC32E9000637211 /* civics_test_questions.csv */; };
-		1CE6C1341CC339B900637211 /* DataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6C1331CC339B900637211 /* DataImporter.swift */; };
-		1CE6C1361CC33ED000637211 /* Questions in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6C1351CC33ED000637211 /* Questions */; };
-		81E58885D289A7E721B6464B /* Pods_Citizstudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DB4D5FFC307BDA8C3AEA9B /* Pods_Citizstudy.framework */; };
+		71A8F8A03048135BD221FDF8 /* Pods_Citizstudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019EA1BD30A3899656428D97 /* Pods_Citizstudy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019EA1BD30A3899656428D97 /* Pods_Citizstudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Citizstudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1616088A1CC2EF5A002822B2 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 		1616088C1CC2F4B4002822B2 /* FlashCardScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardScreen.swift; sourceTree = "<group>"; };
 		1616088E1CC2F4F7002822B2 /* PracticeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScreen.swift; sourceTree = "<group>"; };
@@ -61,12 +59,12 @@
 		1643694B1CC2D8C2009E69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164369591CC2DC48009E69F2 /* initScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initScreen.swift; sourceTree = "<group>"; };
 		1CE6C1291CC3121B00637211 /* CivicsQuestionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivicsQuestionClass.swift; sourceTree = "<group>"; };
-		1CE6C1311CC32E9000637211 /* civics_test_questions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = civics_test_questions.csv; sourceTree = "<group>"; };
-		1CE6C1331CC339B900637211 /* DataImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImporter.swift; sourceTree = "<group>"; };
-		1CE6C1351CC33ED000637211 /* Questions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Questions; sourceTree = "<group>"; };
-		2A95BF9ABC0FEAADFA7BF40E /* Pods-Citizstudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citizstudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy.debug.xcconfig"; sourceTree = "<group>"; };
-		2E99BF15B9F3F22FC433E4AE /* Pods-Citizstudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citizstudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy.release.xcconfig"; sourceTree = "<group>"; };
-		34DB4D5FFC307BDA8C3AEA9B /* Pods_Citizstudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Citizstudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B20E873B9E70A2E53A91577 /* Pods-CitizstudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitizstudyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CitizstudyUITests/Pods-CitizstudyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B0131B06A138E64F04EFBE5 /* Pods-Citizstudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citizstudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy.debug.xcconfig"; sourceTree = "<group>"; };
+		6B53C5D75B517AF14339BE96 /* Pods-CitizstudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitizstudyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CitizstudyUITests/Pods-CitizstudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		924BDF5148596866C4871AA4 /* Pods-Citizstudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citizstudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy.release.xcconfig"; sourceTree = "<group>"; };
+		A5B4C3493CC9651730522FC2 /* Pods-CitizstudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitizstudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CitizstudyTests/Pods-CitizstudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C9673975AE89469A7E21F5 /* Pods-CitizstudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitizstudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CitizstudyTests/Pods-CitizstudyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E58885D289A7E721B6464B /* Pods_Citizstudy.framework in Frameworks */,
+				71A8F8A03048135BD221FDF8 /* Pods_Citizstudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +100,8 @@
 				1643693D1CC2D8C2009E69F2 /* CitizstudyTests */,
 				164369481CC2D8C2009E69F2 /* CitizstudyUITests */,
 				164369271CC2D8C2009E69F2 /* Products */,
-				511B12D80C2EE7986AAB3CAB /* Pods */,
-				F6A3995FF8561ED994FD7EE0 /* Frameworks */,
+				474967D01DDACBE1A40F0CF1 /* Pods */,
+				9AE8F7723F30601F7F8A60ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,10 +128,7 @@
 				1643692D1CC2D8C2009E69F2 /* Main.storyboard */,
 				164369301CC2D8C2009E69F2 /* Assets.xcassets */,
 				164369321CC2D8C2009E69F2 /* LaunchScreen.storyboard */,
-				1CE6C1311CC32E9000637211 /* civics_test_questions.csv */,
 				164369351CC2D8C2009E69F2 /* Info.plist */,
-				1CE6C1331CC339B900637211 /* DataImporter.swift */,
-				1CE6C1351CC33ED000637211 /* Questions */,
 			);
 			path = Citizstudy;
 			sourceTree = "<group>";
@@ -156,19 +151,23 @@
 			path = CitizstudyUITests;
 			sourceTree = "<group>";
 		};
-		511B12D80C2EE7986AAB3CAB /* Pods */ = {
+		474967D01DDACBE1A40F0CF1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2A95BF9ABC0FEAADFA7BF40E /* Pods-Citizstudy.debug.xcconfig */,
-				2E99BF15B9F3F22FC433E4AE /* Pods-Citizstudy.release.xcconfig */,
+				4B0131B06A138E64F04EFBE5 /* Pods-Citizstudy.debug.xcconfig */,
+				924BDF5148596866C4871AA4 /* Pods-Citizstudy.release.xcconfig */,
+				A5B4C3493CC9651730522FC2 /* Pods-CitizstudyTests.debug.xcconfig */,
+				C6C9673975AE89469A7E21F5 /* Pods-CitizstudyTests.release.xcconfig */,
+				6B53C5D75B517AF14339BE96 /* Pods-CitizstudyUITests.debug.xcconfig */,
+				2B20E873B9E70A2E53A91577 /* Pods-CitizstudyUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F6A3995FF8561ED994FD7EE0 /* Frameworks */ = {
+		9AE8F7723F30601F7F8A60ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34DB4D5FFC307BDA8C3AEA9B /* Pods_Citizstudy.framework */,
+				019EA1BD30A3899656428D97 /* Pods_Citizstudy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,12 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1643694E1CC2D8C2009E69F2 /* Build configuration list for PBXNativeTarget "Citizstudy" */;
 			buildPhases = (
-				982055B939D4D53C0C815BB3 /* Check Pods Manifest.lock */,
+				F65C7FCAFBF42402A1CCB00E /* [CP] Check Pods Manifest.lock */,
 				164369221CC2D8C2009E69F2 /* Sources */,
 				164369231CC2D8C2009E69F2 /* Frameworks */,
 				164369241CC2D8C2009E69F2 /* Resources */,
-				E8E44DD317C8697A47DE729E /* Embed Pods Frameworks */,
-				7624B4C7E7FDE8AB87A0F26D /* Copy Pods Resources */,
+				E6257005DED0A5C083AE4775 /* [CP] Embed Pods Frameworks */,
+				763420443C18A4EF3DC40C80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164369511CC2D8C2009E69F2 /* Build configuration list for PBXNativeTarget "CitizstudyTests" */;
 			buildPhases = (
+				746B72AA8A41DC3707DFC200 /* [CP] Check Pods Manifest.lock */,
 				164369361CC2D8C2009E69F2 /* Sources */,
 				164369371CC2D8C2009E69F2 /* Frameworks */,
 				164369381CC2D8C2009E69F2 /* Resources */,
+				48F58A381519ED90E34EBA84 /* [CP] Embed Pods Frameworks */,
+				04A7B7E12AC0AF863AC11793 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164369541CC2D8C2009E69F2 /* Build configuration list for PBXNativeTarget "CitizstudyUITests" */;
 			buildPhases = (
+				D547078437D11F53D23E1B03 /* [CP] Check Pods Manifest.lock */,
 				164369411CC2D8C2009E69F2 /* Sources */,
 				164369421CC2D8C2009E69F2 /* Frameworks */,
 				164369431CC2D8C2009E69F2 /* Resources */,
+				4314B96A0DF7BB80A9AB3B2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,9 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				164369341CC2D8C2009E69F2 /* LaunchScreen.storyboard in Resources */,
-				1CE6C1361CC33ED000637211 /* Questions in Resources */,
 				164369311CC2D8C2009E69F2 /* Assets.xcassets in Resources */,
-				1CE6C1321CC32E9100637211 /* civics_test_questions.csv in Resources */,
 				1643692F1CC2D8C2009E69F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,29 +308,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7624B4C7E7FDE8AB87A0F26D /* Copy Pods Resources */ = {
+		04A7B7E12AC0AF863AC11793 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitizstudyTests/Pods-CitizstudyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		982055B939D4D53C0C815BB3 /* Check Pods Manifest.lock */ = {
+		4314B96A0DF7BB80A9AB3B2E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitizstudyUITests/Pods-CitizstudyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F58A381519ED90E34EBA84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitizstudyTests/Pods-CitizstudyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746B72AA8A41DC3707DFC200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,19 +368,64 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E8E44DD317C8697A47DE729E /* Embed Pods Frameworks */ = {
+		763420443C18A4EF3DC40C80 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D547078437D11F53D23E1B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6257005DED0A5C083AE4775 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Citizstudy/Pods-Citizstudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F65C7FCAFBF42402A1CCB00E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -359,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE6C12A1CC3121B00637211 /* CivicsQuestionClass.swift in Sources */,
-				1CE6C1341CC339B900637211 /* DataImporter.swift in Sources */,
 				1616088B1CC2EF5A002822B2 /* MenuScreen.swift in Sources */,
 				1616088D1CC2F4B4002822B2 /* FlashCardScreen.swift in Sources */,
 				1616088F1CC2F4F7002822B2 /* PracticeScreen.swift in Sources */,
@@ -503,7 +579,7 @@
 		};
 		1643694F1CC2D8C2009E69F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A95BF9ABC0FEAADFA7BF40E /* Pods-Citizstudy.debug.xcconfig */;
+			baseConfigurationReference = 4B0131B06A138E64F04EFBE5 /* Pods-Citizstudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -517,7 +593,7 @@
 		};
 		164369501CC2D8C2009E69F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E99BF15B9F3F22FC433E4AE /* Pods-Citizstudy.release.xcconfig */;
+			baseConfigurationReference = 924BDF5148596866C4871AA4 /* Pods-Citizstudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -532,6 +608,7 @@
 		};
 		164369521CC2D8C2009E69F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B4C3493CC9651730522FC2 /* Pods-CitizstudyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CitizstudyTests/Info.plist;
@@ -544,6 +621,7 @@
 		};
 		164369531CC2D8C2009E69F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C9673975AE89469A7E21F5 /* Pods-CitizstudyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CitizstudyTests/Info.plist;
@@ -556,6 +634,7 @@
 		};
 		164369551CC2D8C2009E69F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B53C5D75B517AF14339BE96 /* Pods-CitizstudyUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CitizstudyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -568,6 +647,7 @@
 		};
 		164369561CC2D8C2009E69F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B20E873B9E70A2E53A91577 /* Pods-CitizstudyUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CitizstudyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
